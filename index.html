@@ -4,121 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Images à gauche avec bandes noires et titre</title>
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-        th, td {
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f4f4f4;
-            vertical-align: middle;
-        }
-        .no-border {
-            border: none;
-        }
-        .black-band {
-            background-color: black;
-            width: -0.5px;
-        }
-        .equipment-title {
-            font-size: 20px;
-            text-align: center;
-            padding: 10px 0;
-            color: #000;
-        }
-        .top-left-image {
-            position: absolute;
-            top: 0;
-            left: 0;
-            margin: 10px;
-        }
-        .top-right-text {
-            position: absolute;
-            top: 0;
-            right: 0;
-            margin: 10px;
-            text-align: right;
-        }
-        .right-margin-paragraph {
-            position: absolute;
-            top: 60px; 
-            right: 10px; 
-            width: 200px; 
-        }
-        .description-container {
-            padding: 20px;
-        }
-        .description-title {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        .description-text {
-            font-size: 16px;
-        }
-        .right-align {
-            text-align: right;
-        }
-        .spacer {
-            width: 10%;
-        }
-        .description-container {
-            text-align: right; 
-        }
-        .content-right {
-            width: 50%; 
-            vertical-align: top;
-        }
-        .bottom-right-image {
-            position: fixed;
-            bottom: 10px; 
-            right: 10px; 
-        }
-        .bottom-line {
-            border-top: 1px solid black;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-        }
-        .middle-line {
-            border-top: 0.5px solid black;
-            width: 100%;
-            text-align: center;
-            margin: 20px 0;
-            position: relative;
-            top: 50%; /* Adjust position as needed */
-        }
-        .centered-text {
-            text-align: center;
-            margin: 20px 0;
-        }
-    </style>
 </head>
 <body>
-    <img src="images.png" alt="Image1" class="top-left-image" style="width: 100px; height: auto;">
-    <div class="top-right-text">
+    <img src="images.png" alt="Image1" style="position: absolute; top: 0; left: 0; margin: 10px; width: 100px; height: auto;">
+    <div style="position: absolute; top: 0; right: 0; margin: 10px; text-align: right;">
         <p style="margin: 0; font-size: 16px;">Bonjour à tous</p>
         <p style="margin: 0; font-size: 20px; font-weight: bold;">Contacter nous</p>
     </div>
-    <div class="right-margin-paragraph">
+    <div style="position: absolute; top: 60px; right: 10px; width: 200px;">
         <p>Le Rio Yachts 58 Coupe Sport est un yacht de luxe conçu pour offrir une expérience de navigation inégalée. Avec une longueur de 17,55 mètres, ce yacht est équipé d'un moteur Volvo de 1000 CV, garantissant une performance exceptionnelle sur l'eau. Le design moderne et élégant du yacht, combiné à des matériaux de haute qualité, assure un confort optimal à bord. Que ce soit pour une croisière relaxante ou une aventure palpitante, le Rio Yachts 58 Coupe Sport est le choix idéal pour les amateurs de navigation sophistiquée.</p>
     </div>
-    <table style="width: 100%;">
+    <table style="width: 100%; border-collapse: collapse;">
         <tr>
             <td colspan="7" style="text-align: center; padding: 10px 0;">
                 <h1 style="margin: 0;">Rio Yachts 58 coupe sport 0$</h1>
             </td>
         </tr>
     </table>
-    <table style="width: 100%; margin-bottom: -50px;">
+    <table style="width: 100%; margin-bottom: -50px; border-collapse: collapse;">
         <tr>
             <td style="text-align: center;">
-                <div class="equipment-title">Équipement</div>
+                <div style="font-size: 20px; text-align: center; padding: 10px 0; color: #000;">Équipement</div>
             </td>
         </tr>
     </table>
@@ -127,45 +33,45 @@
             <td style="width: 25%; vertical-align: top; padding-right: 0;">
                 <img src="1.png" alt="Image2" style="width: 600px; height: 300px; display: block; margin-top: 50px; margin-left: -100px;">
                 <p style="font-size: 40px; margin-top: 5px;">Caractéristique</p>
-                <table class="no-border">
+                <table style="border-collapse: collapse; border: none; width: 100%;">
                     <tr>
-                        <th>État</th>
-                        <td>Neuf</td>
+                        <th style="padding: 8px; text-align: left; background-color: #f4f4f4; vertical-align: middle;">État</th>
+                        <td style="padding: 8px; text-align: left;">Neuf</td>
                     </tr>
                     <tr>
-                        <th>Année</th>
-                        <td>2004</td>
+                        <th style="padding: 8px; text-align: left; background-color: #f4f4f4; vertical-align: middle;">Année</th>
+                        <td style="padding: 8px; text-align: left;">2004</td>
                     </tr>
                     <tr>
-                        <th>Longueur</th>
-                        <td>17,55 m</td>
+                        <th style="padding: 8px; text-align: left; background-color: #f4f4f4; vertical-align: middle;">Longueur</th>
+                        <td style="padding: 8px; text-align: left;">17,55 m</td>
                     </tr>
                     <tr>
-                        <th>Moteur</th>
-                        <td>Volvo</td>
+                        <th style="padding: 8px; text-align: left; background-color: #f4f4f4; vertical-align: middle;">Moteur</th>
+                        <td style="padding: 8px; text-align: left;">Volvo</td>
                     </tr>
                     <tr>
-                        <th>Puissance</th>
-                        <td>1000 CV</td>
+                        <th style="padding: 8px; text-align: left; background-color: #f4f4f4; vertical-align: middle;">Puissance</th>
+                        <td style="padding: 8px; text-align: left;">1000 CV</td>
                     </tr>
                     <tr>
-                        <th>Énergie</th>
-                        <td>Diesel</td>
+                        <th style="padding: 8px; text-align: left; background-color: #f4f4f4; vertical-align: middle;">Énergie</th>
+                        <td style="padding: 8px; text-align: left;">Diesel</td>
                     </tr>
                 </table>
             </td>
-            <td class="black-band"></td>
-            <td class="content-right">
-                <div class="description-container">
-                    <div class="description-title"></div>
-                    <div class="description-text"></div>
+            <td style="background-color: black; width: -0.5px;"></td>
+            <td style="width: 50%; vertical-align: top; text-align: right;">
+                <div style="padding: 20px; text-align: right;">
+                    <div style="font-size: 24px; font-weight: bold; margin-bottom: 10px;"></div>
+                    <div style="font-size: 16px;"></div>
                 </div>
             </td>
-            <td class="black-band"></td>
+            <td style="background-color: black; width: -0.5px;"></td>
             <td style="width: 300%;"></td>
         </tr>
     </table>
-    <div class="centered-text">Bonjour à tous</div>
-    <img src="5.jpeg" alt="Image3" class="bottom-right-image" style="width: 150px; height: auto;">
+    <div style="text-align: center; margin: 20px 0;">Bonjour à tous</div>
+    <img src="5.jpeg" alt="Image3" style="position: fixed; bottom: 10px; right: 10px; width: 150px; height: auto;">
 </body>
 </html>
